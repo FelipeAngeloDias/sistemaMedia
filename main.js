@@ -50,7 +50,7 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
    const mediaFinal = calculaMediaFinal();
 
-   document.getElementById('mediaFinalValor').innerHTML = mediaFinal;
+   document.getElementById('mediaFinalValor').innerHTML = mediaFinal.toFixed(2);
    document.getElementById('mediaFinalResultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 function calculaMediaFinal(){
